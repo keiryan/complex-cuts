@@ -1,5 +1,5 @@
 import ImageCard from "@/app/components/ImageCard";
-import Button from "@/app/components/Button";
+import HomeButton from "@/app/components/HomeButton";
 export default function CutsGallery() {
   const cuts = [
     {
@@ -43,11 +43,11 @@ export default function CutsGallery() {
         ))}
       </div>
       <div className="flex justify-center">
-        <Button destination="/">
+        <HomeButton destination="/">
           <div className="flex gap-2">
             View all services <img src="./icons/arrow.svg" />
           </div>
-        </Button>
+        </HomeButton>
       </div>
     </div>
   );

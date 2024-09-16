@@ -15,12 +15,16 @@ module.exports = {
         custom: ["var(--font-monument-extended)", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 15px 5px rgba(184, 155, 121, 0.3)", // Add your glow effect here
+        glow: "0 0 15px 5px rgba(184, 155, 121, 0.3)",
       },
       colors: {
         "gold-main": "#b89b79",
         "gold-secondary": "#E7D4BE",
         "grey-footer": "#797979",
+      },
+      textUnderlineOffset: {
+        4: "4px",
+        8: "8px",
       },
     },
   },

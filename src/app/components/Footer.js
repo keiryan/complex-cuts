@@ -6,7 +6,7 @@ function ListItem({ children }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white p-8 w-full flex justify-center">
+    <footer className="bg-black text-white p-8 w-full flex justify-center mt-96">
       <div className="max-w-screen-xl w-full">
         <div className="flex gap-4 justify-between">
           <section className="flex flex-col gap-2">

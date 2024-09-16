@@ -1,11 +1,13 @@
-import React from "react";
+import PageContainer from "../components/PageContainer";
 
 const AboutPage = () => {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>Welcome to our website! This is the about page.</p>
-    </div>
+    <PageContainer>
+      <div className="py-24 text-center w-full">
+        <h1>Contact Page</h1>
+        <p>Get in contact with us!</p>
+      </div>
+    </PageContainer>
   );
 };
 
