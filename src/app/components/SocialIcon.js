@@ -1,9 +1,9 @@
-import Image from "next/image";
-export default function SocialIcon({ href, src, alt }) {
+import SVG from "./SVG";
+export default function SocialIcon({ href, src, alt, icon, color }) {
   return (
     <li>
       <a href={href}>
-        <Image src={src} alt={alt} width={32} height={32} />
+        <SVG icon={icon} color={color} />
       </a>
     </li>
   );

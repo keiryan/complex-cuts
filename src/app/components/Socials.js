@@ -33,8 +33,10 @@ export default function Socials({ color, size }) {
         <SocialIcon
           key={icon.id}
           href={icon.href}
-          src={icon.src}
           alt={icon.alt}
+          color={color}
+          size={size}
+          icon={icon.id}
         />
       ))}
     </ul>
