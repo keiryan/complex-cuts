@@ -6,8 +6,8 @@ import ExamplesGallery from "./components/ExamplesGallery";
 
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col">
-      <div className="relative w-full min-h-full bg-cover bg-no-repeat flex flex-col justify-center text-gold-main">
+    <main className="w-full flex flex-col">
+      <div className="relative w-full min-h-full bg-cover bg-no-repeat flex flex-col justify-center text-gold-main min-h-screen">
         <Image
           src="/images/home/landing-background.png"
           alt="Complex Cuts Logo"
@@ -29,10 +29,12 @@ export default function Home() {
             <Button destination="https://complexcuts.as.me/schedule.php">
               <div className="flex gap-2 items-center">
                 {" "}
-                <img
+                <Image
                   src="/icons/scissors.svg"
                   alt="Complex Cuts Logo"
                   className=""
+                  width={24}
+                  height={24}
                 />
                 Book Appoinment
               </div>
@@ -42,32 +44,36 @@ export default function Home() {
       </div>
       <CutsGallery />
       {/* Time for a trim */}
-      <div className="w-full flex flex-col items-center">
-        <div className="bg-black rounded flex justify-between w-full max-h-96 max-w-screen-xl">
-          <div className="flex flex-col gap-8 justify-between pt-8 pl-8">
+      <div className="w-full flex flex-col items-center p-4">
+        <div className="bg-black rounded flex justify-between w-full max-w-screen-xl">
+          <div className="flex flex-col gap-8 justify-between pt-8 pl-8 flex-1">
             <div>
               <div className="text-gold-main text-2xl">Time for a trim?</div>
-              <div className="text-[#676665]">
-                no one needs to see you looking rough.
+              <div className="text-[#676665] my-6">
+                No one needs to see you looking rough.
               </div>
             </div>
             <Button destination="/">
               <div className="flex items-center gap-2">
-                <img src="/icons/scissors.svg" />
+                <Image src="/icons/scissors.svg" width={24} height={24} />
                 book appointment
               </div>
             </Button>
           </div>
-          <div className="h-full w-fit">
-            <img
+          <div className="relative h-[400px] w-fit flex-1">
+            {" "}
+            {/* Adjust width as needed */}
+            <Image
               src="/images/home/trim.png"
               alt="Trim"
-              className="h-full object-contain"
+              fill
+              style={{ objectFit: "contain", objectPosition: "right" }}
             />
           </div>
         </div>
-
-        <ExamplesGallery />
+        <div className="max-w-screen-xl">
+          <ExamplesGallery />
+        </div>
       </div>
     </main>
   );

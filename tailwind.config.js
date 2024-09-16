@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         "gold-main": "#b89b79",
         "gold-secondary": "#E7D4BE",
+        "grey-footer": "#797979",
       },
     },
   },
