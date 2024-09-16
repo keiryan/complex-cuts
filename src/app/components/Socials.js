@@ -1,6 +1,6 @@
 import SocialIcon from "@/app/components/SocialIcon";
 
-export default function Socials() {
+export default function Socials({ color, size }) {
   const socialIcons = [
     {
       href: "https://www.facebook.com/ComplexCutsBarbershop",

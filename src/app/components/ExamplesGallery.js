@@ -22,10 +22,14 @@ export default function ExamplesGallery() {
     },
   ];
   return (
-    <div className="grid grid-rows-2 grid-flow-col">
+    <div className="w-full grid grid-rows-2 grid-flow-col">
       {images.map((image) => (
-        <div key={image.id} className="flex flex-col">
-          <img src={image.src} alt={image.alt} />
+        <div key={image.id} className="f">
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="size-full object-cover"
+          />
         </div>
       ))}
     </div>

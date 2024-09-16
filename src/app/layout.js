@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
-import Navbar from "@/app/components/Navbar"; // Import the Navbar component
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+
 import "./globals.css";
 
 const monumentExtended = localFont({
@@ -30,11 +32,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${monumentExtended.variable} antialiased bg-[#151515]`}
       >
-        <div className="w-screen h-screen font-custom relative overflow-y-auto">
+        <div className="w-screen h-screen font-custom relative overflow-y-auto flex flex-col items-center">
           <Navbar />
-          <div className="w-full flex justify-center h-full">
-            <main className="max-w-screen-2xl w-full">{children}</main>
-          </div>
+          <main className="max-w-screen-2xl w-full">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
