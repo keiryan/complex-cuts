@@ -10,6 +10,31 @@ const monumentExtended = localFont({
   weight: "400",
 });
 
+const monumentExtendedRegular = localFont({
+  src: "./fonts/PPMonumentExtended-Regular.otf",
+  variable: "--font-pp-monument-extended-regular",
+  weight: "400",
+});
+
+const monumentExtendedLight = localFont({
+  src: "./fonts/PPMonumentExtended-Light.otf",
+  variable: "--font-pp-monument-extended-light",
+  weight: "300",
+});
+
+const monumentExtendedBlack = localFont({
+  src: "./fonts/PPMonumentExtended-Black.otf",
+  variable: "--font-pp-monument-extended-black",
+  weight: "900",
+});
+
+const monumentExtendedItalic = localFont({
+  src: "./fonts/PPMonumentExtended-RegularItalic.otf",
+  variable: "--font-pp-monument-extended-italic",
+  style: "italic",
+  weight: "400",
+});
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,9 +55,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${monumentExtended.variable} antialiased bg-[#151515]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${monumentExtended.variable} ${monumentExtendedRegular.variable} ${monumentExtendedLight.variable} ${monumentExtendedBlack.variable} ${monumentExtendedItalic.variable} antialiased bg-[#151515]`}
       >
-        <div className="w-screen h-screen font-custom relative overflow-y-auto flex flex-col items-center">
+        <div className="w-screen h-screen font-monumentExtendedRegular relative overflow-y-auto flex flex-col items-center">
           <Navbar />
           <main className="max-w-screen-2xl w-full">{children}</main>
           <Footer />
