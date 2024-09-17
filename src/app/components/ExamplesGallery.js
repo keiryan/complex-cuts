@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ExamplesGallery() {
   const images = [
     {
@@ -23,14 +25,25 @@ export default function ExamplesGallery() {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-2">
-      {images.map((image) => (
-        <div key={image.id}>
-          <img
+    <div className="flex flex-wrap w-full">
+      {images.map((image, index) => (
+        <div
+          key={image.id}
+          className={`relative w-full sm:w-1/2 h-auto aspect-square ${
+            index % 3 ? "bg-blue-500" : "bg-red-500"
+          }`}
+          style={{
+            backgroundImage: `url(${image.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* <Image
             src={image.src}
             alt={image.alt}
-            className="size-full object-cover"
-          />
+            className="object-cover"
+            layout="fill"
+          /> */}
         </div>
       ))}
     </div>

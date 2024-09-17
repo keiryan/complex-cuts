@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full p-4 py-8 absolute top-0 left-0 text-gold-secondary z-[99]">
-      <ul className="flex gap-8 justify-center">
+      <ul className="flex gap-8 justify-center flex-wrap">
         {navItems.map((item) => (
           <NavItem key={item.id} href={item.href}>
             {item.label}
