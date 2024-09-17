@@ -11,9 +11,6 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        custom: ["var(--font-monument-extended)", "sans-serif"],
-      },
       boxShadow: {
         glow: "0 0 15px 5px rgba(184, 155, 121, 0.3)",
       },
@@ -25,6 +22,29 @@ module.exports = {
       textUnderlineOffset: {
         4: "4px",
         8: "8px",
+      },
+      fontFamily: {
+        // Adding custom fonts
+        monumentExtended: ["var(--font-monument-extended)", "sans-serif"],
+        monumentExtendedRegular: [
+          "var(--font-pp-monument-extended-regular)",
+          "sans-serif",
+        ],
+        monumentExtendedLight: [
+          "var(--font-pp-monument-extended-light)",
+          "sans-serif",
+        ],
+        monumentExtendedBlack: [
+          "var(--font-pp-monument-extended-black)",
+          "sans-serif",
+        ],
+        monumentExtendedItalic: [
+          "var(--font-pp-monument-extended-italic)",
+          "sans-serif",
+        ],
+        geistSans: ["var(--font-geist-sans)", "sans-serif"],
+        geistMono: ["var(--font-geist-mono)", "monospace"],
+        custom: ["var(--font-monument-extended)", "sans-serif"],
       },
     },
   },

@@ -1,5 +1,6 @@
 import ImageCard from "@/app/components/ImageCard";
 import HomeButton from "@/app/components/HomeButton";
+
 export default function CutsGallery() {
   const cuts = [
     {
@@ -27,25 +28,29 @@ export default function CutsGallery() {
       price: "$25",
     },
   ];
+
   return (
-    <div className="flex flex-col my-24 px-4">
-      <div className="grid grid-rows-2 grid-flow-col gap-8 justify-center my-8">
+    <div className="flex flex-col items-center my-24 px-4">
+      {/* Mobile: Single column, Larger screens: Two-column grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
         {cuts.map((cut) => (
           <ImageCard
             key={cut.title}
             src={cut.src}
             alt={cut.alt}
-            width={350}
-            height={350}
             title={cut.title}
             price={cut.price}
+            width={400}
+            height={400}
           />
         ))}
       </div>
+      
+      {/* Full-width button on mobile */}
       <div className="flex justify-center">
         <HomeButton destination="/">
           <div className="flex items-center gap-2">
-            View all services <img src="./icons/arrow.svg" />
+            View all services <img src="./icons/arrow.svg" alt="arrow" />
           </div>
         </HomeButton>
       </div>
