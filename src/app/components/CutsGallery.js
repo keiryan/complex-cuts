@@ -28,7 +28,7 @@ export default function CutsGallery() {
     },
   ];
   return (
-    <div className="flex flex-col my-24">
+    <div className="flex flex-col my-24 px-4">
       <div className="grid grid-rows-2 grid-flow-col gap-8 justify-center my-8">
         {cuts.map((cut) => (
           <ImageCard
@@ -44,7 +44,7 @@ export default function CutsGallery() {
       </div>
       <div className="flex justify-center">
         <HomeButton destination="/">
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
             View all services <img src="./icons/arrow.svg" />
           </div>
         </HomeButton>

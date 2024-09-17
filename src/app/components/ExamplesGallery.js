@@ -21,10 +21,11 @@ export default function ExamplesGallery() {
       id: "example4",
     },
   ];
+
   return (
-    <div className="w-full grid grid-rows-2 grid-flow-col">
+    <div className="w-full grid grid-cols-1 sm:grid-cols-2">
       {images.map((image) => (
-        <div key={image.id} className="f">
+        <div key={image.id}>
           <img
             src={image.src}
             alt={image.alt}
