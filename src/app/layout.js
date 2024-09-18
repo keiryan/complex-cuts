@@ -55,13 +55,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${monumentExtended.variable} ${monumentExtendedRegular.variable} ${monumentExtendedLight.variable} ${monumentExtendedBlack.variable} ${monumentExtendedItalic.variable} antialiased bg-[#151515]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${monumentExtended.variable} ${monumentExtendedRegular.variable} ${monumentExtendedLight.variable} ${monumentExtendedBlack.variable} ${monumentExtendedItalic.variable} antialiased bg-[#151515] font-monumentExtendedRegular relative overflow-y-auto flex flex-col items-center`}
       >
-        <div className="w-screen h-screen font-monumentExtendedRegular relative overflow-y-auto flex flex-col items-center">
-          <Navbar />
-          <main className="max-w-screen-2xl w-full">{children}</main>
-          <Footer />
-        </div>
+        <Navbar />
+        <main className="max-w-screen-2xl w-full">{children}</main>
+        <Footer />
       </body>
     </html>
   );

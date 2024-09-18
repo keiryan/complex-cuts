@@ -1,5 +1,6 @@
 import HomeButton from "@/app/components/HomeButton";
 import Image from "next/image";
+import Link from "next/link";
 export default function Trim() {
   return (
     <div className="bg-black rounded-lg flex flex-col-reverse md:flex-row gap-2 justify-between w-full max-w-screen-xl overflow-hidden">
@@ -14,10 +15,15 @@ export default function Trim() {
           </div>
         </div>
         <div className="flex justify-center w-full">
-          <HomeButton destination="/">
+          <HomeButton destination="https://complexcuts.as.me/schedule.php">
             <div className="flex items-center gap-2">
-              <Image src="/icons/scissors.svg" width={24} height={24} alt="scissors icon" />
-              book <span>appointment</span>
+              <Image
+                src="/icons/scissors.svg"
+                width={24}
+                height={24}
+                alt="scissors icon"
+              />
+              book <span className="max-md:hidden">appointment</span>
             </div>
           </HomeButton>
         </div>

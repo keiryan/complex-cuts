@@ -49,7 +49,7 @@ export default function CutsGallery() {
       
       {/* Full-width button on mobile */}
       <div className="flex justify-center">
-        <HomeButton destination="/">
+        <HomeButton destination="/services">
           <div className="flex items-center gap-2">
             View all services <Image src="./icons/arrow.svg" alt="arrow" width={32} height={32} />
           </div>
