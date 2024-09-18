@@ -23,7 +23,7 @@ export default function HomeHero() {
         </div>
         {/* Info and Booking */}
         <div className="flex flex-col text-xl sm:text-2xl gap-2 text-center lg:text-left">
-          <div>Men's barbershop</div>
+          <div>Men&apos;s barbershop</div>
           <div>Wilmington, NC</div>
           <div className="sm:flex sm:justify-center w-full max-sm:px-16">
             <HomeButton destination="https://complexcuts.as.me/schedule.php">

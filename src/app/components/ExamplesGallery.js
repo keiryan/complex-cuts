@@ -29,9 +29,7 @@ export default function ExamplesGallery() {
       {images.map((image, index) => (
         <div
           key={image.id}
-          className={`relative w-full sm:w-1/2 h-auto aspect-square ${
-            index % 3 ? "bg-blue-500" : "bg-red-500"
-          }`}
+          className={`relative w-full sm:w-1/2 h-auto aspect-square`}
           style={{
             backgroundImage: `url(${image.src})`,
             backgroundSize: "cover",
