@@ -16,7 +16,7 @@ export default function Trim() {
         <div className="flex justify-center w-full">
           <HomeButton destination="/">
             <div className="flex items-center gap-2">
-              <Image src="/icons/scissors.svg" width={24} height={24} />
+              <Image src="/icons/scissors.svg" width={24} height={24} alt="scissors icon" />
               book <span>appointment</span>
             </div>
           </HomeButton>

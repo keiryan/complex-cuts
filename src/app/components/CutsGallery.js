@@ -1,5 +1,6 @@
 import ImageCard from "@/app/components/ImageCard";
 import HomeButton from "@/app/components/HomeButton";
+import Image from "next/image";
 
 export default function CutsGallery() {
   const cuts = [
@@ -50,7 +51,7 @@ export default function CutsGallery() {
       <div className="flex justify-center">
         <HomeButton destination="/">
           <div className="flex items-center gap-2">
-            View all services <img src="./icons/arrow.svg" alt="arrow" />
+            View all services <Image src="./icons/arrow.svg" alt="arrow" width={32} height={32} />
           </div>
         </HomeButton>
       </div>
