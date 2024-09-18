@@ -1,6 +1,6 @@
 import HomeButton from "@/app/components/HomeButton";
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Trim() {
   return (
     <div className="bg-black rounded-lg flex flex-col-reverse md:flex-row gap-2 justify-between w-full max-w-screen-xl overflow-hidden">

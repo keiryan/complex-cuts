@@ -1,5 +1,5 @@
-import Image from "next/image";
 import HomeButton from "@/app/components/HomeButton";
+import Image from "next/image";
 import Socials from "@/app/components/Socials";
 
 export default function HomeHero() {
@@ -11,7 +11,7 @@ export default function HomeHero() {
         loop
         playsInline
         id="hero-video"
-        className="w-full h-full absolute brightness-[0.20] object-cover"
+        className="w-full h-full absolute brightness-[0.75] object-cover"
       >
         <source src="/images/home/hero_video.webm" type="video/webm" />
         <source src="/images/home/hero_video.mp4" type="video/mp4" />

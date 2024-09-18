@@ -1,8 +1,9 @@
 import CutsGallery from "@/app/components/CutsGallery";
 import ExamplesGallery from "@/app/components/ExamplesGallery";
+import HomeHero from "@/app/components/HomeHero";
 import PageContainer from "@/app/components/PageContainer";
 import Trim from "@/app/components/Trim";
-import HomeHero from "@/app/components/HomeHero";
+
 export default function Home() {
   return (
     <main className="w-full flex flex-col">
