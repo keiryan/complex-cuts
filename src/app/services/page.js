@@ -6,7 +6,7 @@ function Service({ title, price, duration }) {
   return (
     <div className="flex flex-col sm:flex-row justify-between text-gold-main text-lg sm:text-2xl border-b-2 border-gold-main pb-4 sm:pb-1">
       <div className="flex flex-col gap-2">
-        <h2 className="font-bold text-2xl sm:text-3xl">{title}</h2>
+        <h2 className="font-bold text-2xl sm:text-3xl max-w-[100%]">{title}</h2>
         <div className="flex gap-2 text-base sm:text-xl">
           <p>{duration} &#x2022;</p>
           <p>{price}</p>
