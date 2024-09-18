@@ -5,12 +5,18 @@ import Socials from "@/app/components/Socials";
 export default function HomeHero() {
   return (
     <div className="relative w-full min-h-full bg-cover bg-no-repeat flex flex-col justify-center text-gold-main min-h-screen">
-      <Image
-        src="/images/home/landing-background.png"
-        alt="Complex Cuts Logo"
-        fill
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        id="hero-video"
         className="w-full h-full absolute brightness-[0.20] object-cover"
-      />
+      >
+        <source src="/images/home/hero_video.webm" type="video/webm" />
+        <source src="/images/home/hero_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="flex flex-col lg:flex-row gap-8 w-full justify-center z-[1] px-4 sm:px-8 lg:px-0">
         {/* Title Section */}
         <div className="flex flex-col">

@@ -26,11 +26,13 @@ export default function Footer() {
           <section className="flex flex-col gap-2">
             <h3 className="text-lg sm:text-xl font-semibold">Contact</h3>
             <ul className="flex flex-col gap-2 sm:gap-4">
-              <ListItem>
+              {/* <ListItem>
                 <a href="mailto:tre@complexcuts.com" className="hover:underline">tre@complexcuts.com</a>
-              </ListItem>
+              </ListItem> */}
               <ListItem>
-                <a href="tel:3366469992" className="hover:underline">(336)-646-9992</a>
+                <a href="tel:3366469992" className="hover:underline">
+                  (336)-646-9992
+                </a>
               </ListItem>
               <ListItem>
                 <Socials size={24} color="#797979" />

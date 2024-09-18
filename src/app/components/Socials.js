@@ -9,7 +9,7 @@ export default function Socials({ color, size }) {
       id: "facebook",
     },
     {
-      href: "https://www.instagram.com/complexcutsbarbershop/",
+      href: "https://www.instagram.com/complexcuts/",
       src: "/icons/instagram.svg",
       alt: "Instagram Icon",
       id: "instagram",
@@ -21,7 +21,7 @@ export default function Socials({ color, size }) {
       id: "youtube",
     },
     {
-      href: "https://www.tiktok.com/@complexcutsbarbershop",
+      href: "https://www.tiktok.com/@complexcuts",
       src: "/icons/tiktok.svg",
       alt: "Tiktok Icon",
       id: "tiktok",
