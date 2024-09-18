@@ -4,7 +4,7 @@ import Socials from "@/app/components/Socials";
 
 export default function HomeHero() {
   return (
-    <div className="relative w-full min-h-full bg-cover bg-no-repeat flex flex-col justify-center text-gold-main min-h-screen">
+    <div className="relative w-full min-h-full bg-cover bg-no-repeat flex flex-col justify-center text-gold-main min-h-screen py-24">
       <video
         autoPlay
         muted
@@ -20,7 +20,7 @@ export default function HomeHero() {
       <div className="flex flex-col lg:flex-row gap-8 w-full justify-center z-[1] px-4 sm:px-8 lg:px-0">
         {/* Title Section */}
         <div className="flex flex-col">
-          <h1 className="text-6xl lg:max-xl:text-7xl l sm:text-7xl lg:text-9xl m-0 p-0 uppercase text-center font-bold lg:text-right">
+          <h1 className="text-5xl lg:max-xl:text-7xl l sm:text-7xl lg:text-9xl m-0 p-0 uppercase text-center font-bold lg:text-right">
             Complex <br /> Cuts
           </h1>
           <div className="w-full flex justify-center lg:justify-end mt-4 lg:mt-0">
@@ -40,7 +40,7 @@ export default function HomeHero() {
                   width={24}
                   height={24}
                 />
-                Book Appointment
+                Book <span className="max-md:hidden">appointment</span>
               </div>
             </HomeButton>
           </div>

@@ -13,7 +13,7 @@ function Service({ title, price, duration }) {
         </div>
       </div>
       <div className="mt-4 sm:mt-0 flex justify-start sm:justify-end">
-        <ServicesButton destination="/book">
+        <ServicesButton destination="https://complexcuts.as.me/schedule.php">
           <div className="flex items-center gap-2">
             <span>Book</span>
             <SVG icon="right-arrow" color="#151515" size={24} />
