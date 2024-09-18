@@ -3,7 +3,7 @@ import SocialIcon from "@/app/components/SocialIcon";
 export default function Socials({ color, size }) {
   const socialIcons = [
     {
-      href: "https://www.facebook.com/ComplexCutsBarbershop",
+      href: "https://www.facebook.com/joshua.jones.9634",
       src: "/icons/facebook.svg",
       alt: "Facebook Icon",
       id: "facebook",
@@ -14,12 +14,12 @@ export default function Socials({ color, size }) {
       alt: "Instagram Icon",
       id: "instagram",
     },
-    {
-      href: "https://www.youtube.com/channel/UCVQZ5h6i1J3zK8p8J2y8Y7Q",
-      src: "/icons/youtube.svg",
-      alt: "Youtube Icon",
-      id: "youtube",
-    },
+    // {
+    //   href: "https://www.youtube.com/channel/UCVQZ5h6i1J3zK8p8J2y8Y7Q",
+    //   src: "/icons/youtube.svg",
+    //   alt: "Youtube Icon",
+    //   id: "youtube",
+    // },
     {
       href: "https://www.tiktok.com/@complexcuts",
       src: "/icons/tiktok.svg",

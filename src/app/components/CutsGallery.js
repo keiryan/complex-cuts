@@ -1,6 +1,6 @@
-import ImageCard from "@/app/components/ImageCard";
 import HomeButton from "@/app/components/HomeButton";
 import Image from "next/image";
+import ImageCard from "@/app/components/ImageCard";
 
 export default function CutsGallery() {
   const cuts = [

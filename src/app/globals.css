@@ -27,11 +27,11 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
   .nav-link:hover {
     text-decoration: underline;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }

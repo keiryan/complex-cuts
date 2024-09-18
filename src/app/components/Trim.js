@@ -1,11 +1,11 @@
 import HomeButton from "@/app/components/HomeButton";
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Trim() {
   return (
     <div className="bg-black rounded-lg flex flex-col-reverse md:flex-row gap-2 justify-between w-full max-w-screen-xl overflow-hidden">
       {/* Text Section */}
-      <div className="flex flex-col gap-8 justify-between pt-8 pl-8 max-md:pr-8 flex-1">
+      <div className="flex flex-col gap-8 justify-between pt-8 px-8 flex-1">
         <div>
           <div className="text-gold-main text-2xl lg:text-3xl">
             Time for a trim?
@@ -23,7 +23,7 @@ export default function Trim() {
                 height={24}
                 alt="scissors icon"
               />
-              book <span className="max-md:hidden">appointment</span>
+              book <span className="max-lg:hidden">appointment</span>
             </div>
           </HomeButton>
         </div>

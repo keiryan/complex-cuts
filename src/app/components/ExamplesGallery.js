@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ExamplesGallery() {
   const images = [
     {
@@ -26,7 +24,7 @@ export default function ExamplesGallery() {
 
   return (
     <div className="flex flex-wrap w-full">
-      {images.map((image, index) => (
+      {images.map((image) => (
         <div
           key={image.id}
           className={`relative w-full sm:w-1/2 h-auto aspect-square`}
@@ -35,14 +33,7 @@ export default function ExamplesGallery() {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-        >
-          {/* <Image
-            src={image.src}
-            alt={image.alt}
-            className="object-cover"
-            layout="fill"
-          /> */}
-        </div>
+        ></div>
       ))}
     </div>
   );
