@@ -10,11 +10,11 @@ export default function Home() {
       <PageContainer>
         <HomeHero />
         <CutsGallery />
-        <div className="w-full flex flex-col items-center p-4">
+        <div className="w-full flex flex-col items-center p-4 gap-36">
           <Trim />
-          <div className="w-full max-w-screen-xl mt-8">
-            <ExamplesGallery />
-          </div>
+          {/* <div className="w-full mt-8 flex justify-center bg-blue-500"> */}
+          <ExamplesGallery />
+          {/* </div> */}
         </div>
       </PageContainer>
     </main>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function ExamplesGallery() {
   const images = [
     {
@@ -23,17 +24,24 @@ export default function ExamplesGallery() {
   ];
 
   return (
-    <div className="flex flex-wrap w-full">
-      {images.map((image) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full overflow-x-clip max-w-screen-xl">
+      {images.map((image, index) => (
         <div
           key={image.id}
-          className={`relative w-full sm:w-1/2 h-auto aspect-square`}
-          style={{
-            backgroundImage: `url(${image.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
+          className={
+            (index % 2 ? "md:translate-x-4 " : "md:-translate-x-4") +
+            " relative w-full h-auto aspect-square scale-[1.15] scale-[1.1] mb-16"
+          }
+        >
+          <Image
+            src={image.src}
+            alt={image.alt}
+            layout="fill"
+            objectFit="cover"
+            placeholder="empty"
+            className="nuke"
+          />
+        </div>
       ))}
     </div>
   );
