@@ -36,10 +36,9 @@ export default function ExamplesGallery() {
           <Image
             src={image.src}
             alt={image.alt}
-            layout="fill"
-            objectFit="cover"
+            fill
             placeholder="empty"
-            className="nuke"
+            sizes="(max-width: 100vw)"
           />
         </div>
       ))}

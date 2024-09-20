@@ -8,7 +8,7 @@ function NavItem({ href, children }) {
   );
 }
 
-export default function Navbar() {
+export default function Navbar({ currentPath }) {
   const navItems = [
     {
       href: "https://complexcuts.as.me/schedule.php",
@@ -16,9 +16,10 @@ export default function Navbar() {
       id: "book-appointment",
     },
     { href: "/services", label: "Services", id: "services" },
-    { href: "/", label: "Gallery", id: "gallery" },
-    { href: "/contact", label: "Contact", id: "contact" },
+    { href: "/#CutsGallery", label: "Gallery", id: "gallery" },
   ];
+
+  console.log("currentPath", currentPath); // Logs the server-side path
 
   return (
     <nav className="w-full p-4 py-8 absolute top-0 left-0 text-gold-secondary z-[99]">
@@ -28,6 +29,7 @@ export default function Navbar() {
             {item.label}
           </NavItem>
         ))}
+        <NavItem href="tel:3366469992">Contact</NavItem>
       </ul>
     </nav>
   );

@@ -35,6 +35,7 @@ export default function Trim() {
           src="/images/home/trim.png"
           alt="Trim"
           fill
+          sizes="(max-width: 100vw)"
           style={{ objectFit: "cover", objectPosition: "right" }}
         />
       </div>

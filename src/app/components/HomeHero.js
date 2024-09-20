@@ -1,6 +1,7 @@
 import HomeButton from "@/app/components/HomeButton";
 import Image from "next/image";
 import Socials from "@/app/components/Socials";
+import SVG from "@/app/components/SVG";
 
 export default function HomeHero() {
   return (
@@ -33,14 +34,15 @@ export default function HomeHero() {
           <div>Wilmington, NC</div>
           <div className="sm:flex sm:justify-center w-full max-sm:px-16">
             <div className="md:w-fit">
-            <HomeButton destination="https://complexcuts.as.me/schedule.php">
+            <HomeButton destination="https://complexcuts.as.me/schedule.php" glow flipped>
               <div className="flex gap-2 items-center justify-center lg:justify-start">
-                <Image
+                {/* <Image
                   src="/icons/scissors.svg"
                   alt="Complex Cuts Logo"
                   width={24}
                   height={24}
-                />
+                /> */}
+                <SVG icon="scissors" color="#151515" size={24} />
                 Book <span className="max-md:hidden">appointment</span>
               </div>
             </HomeButton>
