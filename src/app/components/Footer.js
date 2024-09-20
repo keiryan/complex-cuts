@@ -44,9 +44,21 @@ export default function Footer() {
           <section className="flex flex-col gap-2">
             <h3 className="text-lg sm:text-xl font-semibold">Address</h3>
             <ul className="flex flex-col gap-2 sm:gap-4">
-              <ListItem>The Azalea Station</ListItem>
-              <ListItem>1502 Castle St</ListItem>
-              <ListItem>Wilmington, NC 28401</ListItem>
+              <ListItem>
+                <a href="https://maps.app.goo.gl/K3Jn21KUB6nCTNni7">
+                  The Azalea Station
+                </a>
+              </ListItem>
+              <ListItem>
+                <a href="https://maps.app.goo.gl/K3Jn21KUB6nCTNni7">
+                  1502 Castle St
+                </a>
+              </ListItem>
+              <ListItem>
+                <a href="https://maps.app.goo.gl/K3Jn21KUB6nCTNni7">
+                  Wilmington, NC 28401
+                </a>
+              </ListItem>
             </ul>
           </section>
         </div>

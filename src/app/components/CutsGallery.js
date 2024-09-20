@@ -31,7 +31,7 @@ export default function CutsGallery() {
   ];
 
   return (
-    <div className="flex flex-col items-center my-24 px-4">
+    <div className="flex flex-col items-center my-24 px-4 text-white" id="CutsGallery">
       {/* Mobile: Single column, Larger screens: Two-column grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
         {cuts.map((cut) => (
@@ -46,12 +46,13 @@ export default function CutsGallery() {
           />
         ))}
       </div>
-      
+
       {/* Full-width button on mobile */}
       <div className="flex justify-center">
         <HomeButton destination="/services">
           <div className="flex items-center gap-2">
-            View all services <Image src="./icons/arrow.svg" alt="arrow" width={32} height={32} />
+            View all services{" "}
+            <Image src="./icons/arrow.svg" alt="arrow" width={32} height={32} />
           </div>
         </HomeButton>
       </div>
